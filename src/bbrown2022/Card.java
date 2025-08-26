@@ -19,6 +19,7 @@ public class Card {
 
 	}
 		
+	// Main constructor
 	Card(String idCard, String name, String type, String rarity, String description, double price, double retailPrice,
 			int health, String element, int quantity) {
 		this.idCard = idCard;
