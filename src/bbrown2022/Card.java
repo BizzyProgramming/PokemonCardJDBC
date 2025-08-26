@@ -2,6 +2,7 @@ package bbrown2022;
 
 public class Card {
 
+	// Attributes the cards will have
 	private String name;
 	private String description;
 	private double price;
@@ -17,14 +18,13 @@ public class Card {
 	Card() {
 
 	}
-
+		
 	Card(String idCard, String name, String type, String rarity, String description, double price, double retailPrice,
 			int health, String element, int quantity) {
-		super();
 		this.idCard = idCard;
 		this.name = name;
 		this.type = type;
-		this.type = rarity;
+		this.rarity = rarity;
 		this.health = health;
 		this.price = price;
 		this.retailPrice = price;
@@ -33,6 +33,7 @@ public class Card {
 		this.description = description;
 	}
 
+	// Getters and setters
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -115,9 +116,18 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return "ID#: " + idCard + "\nTYPE: " + type + "\n" + "NAME: " + name + "\nRarity: " + rarity + "\nDescription: "
-				+ description + "\nPRICE: $" + price + "\n" + "RETAIL PRICE: $" + retailPrice + "\n" + "\n" + "HEALTH: "
-				+ health + "\nELEMENT: " + element + "\nStock: " + quantity + "\n" + "================";
+		return 
+			  "ID#: " + idCard 
+			+ "\nTYPE: " + type
+			+ "\n" + "NAME: " + name
+			+ "\nRarity: " + rarity
+			+ "\nDescription: " + description
+			+ "\nPRICE: $" + price 
+			+ "\n" + "RETAIL PRICE: $" + retailPrice
+			+ "\n" + "HEALTH: " + health
+			+ "\nELEMENT: " + element
+			+ "\nStock: " + quantity
+			+ "\n" + "================";
 	}
 
 }

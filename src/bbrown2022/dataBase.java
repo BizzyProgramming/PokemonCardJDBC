@@ -13,12 +13,20 @@ public class dataBase {
 	private static Connection conn;
 	private static dataBase instance;
 
-	public dataBase() {
+	private dataBase() {
 		try {
 			conn = DriverManager.getConnection(URL, USER, PASS);
 		} catch (SQLException ex) {
 			System.out.println("Database Connection Creation Failed : " + ex.getMessage());
 		}
+	}
+	
+	// Singleton accessor
+	public static dataBase getInstance() {
+		if (instance == null) {
+			instance = new dataBase();
+		}
+		return instance;
 	}
 
 	public Connection getConnection() {

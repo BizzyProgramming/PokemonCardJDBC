@@ -6,7 +6,8 @@ Add this file to repository on Github
 
 create update method
 
-create type holographic, v, vmax
+// Got rid of this
+create type holographic, v, vmax 
 
 If I wanted to add more columns, for example, Market Price and My Price
 

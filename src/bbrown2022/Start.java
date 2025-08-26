@@ -10,15 +10,16 @@ public class Start {
 	static Scanner sc = new Scanner(System.in);
 	public ArrayList<Card> cards = new ArrayList<>();
 
-	private static dataBase con;
-	dataBase db = new dataBase();
+	private static dataBase db;
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
 		System.out.println("Welcome to Bizzy's Pokemon Card Collection!");
 		System.out.println("================");
-		con = new dataBase();
+		
+		db = dataBase.getInstance();
+		
 		Start s = new Start();
 		s.login();
 	}
@@ -26,7 +27,6 @@ public class Start {
 	@SuppressWarnings("unchecked")
 	public void viewAllCards() {
 
-		dataBase db = new dataBase();
 		String sql = "SELECT * FROM card";
 
 		try {
@@ -146,7 +146,6 @@ public class Start {
 		sc.nextLine();
 
 		String sql2 = "DELETE FROM pokemoncards.card WHERE idCard = ?";
-		dataBase db = new dataBase();
 
 		try (PreparedStatement initiate = db.getConnection().prepareStatement(sql2)) {
 			initiate.setString(1, id_Card);
@@ -339,7 +338,6 @@ public class Start {
 		sc.nextLine();
 
 		String sql = "INSERT into Card(idCard,type,name,rarity,description,price,retailPrice,health,element,quantity) values (?,?,?,?,?,?,?,?,?,?)";
-		dataBase db = new dataBase();
 
 		try {
 			PreparedStatement ps = db.getConnection().prepareStatement(sql);
