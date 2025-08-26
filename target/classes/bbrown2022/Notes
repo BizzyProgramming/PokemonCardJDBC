@@ -1,0 +1,16 @@
+Notes 
+
+
+
+Add this file to repository on Github
+
+create update method
+
+create type holographic, v, vmax
+
+If I wanted to add more columns, for example, Market Price and My Price
+
+Add new column, type(bug, fire, etc.) (STRING), how to deal with null
+Add column, unique id (STRING) 
+
+Get ID's to start from 0 and auto increment
