@@ -30,25 +30,25 @@
 
 ## Screenshots of UI and MySQL table
 
-<p align="center">
-  <b>Main Menu</b><br>
+<details>
+  <summary>Main Menu</summary>
   <img src="images/mainMenu.png" alt="Main Menu" width="600"/>
-</p>
+</details>
 
-<p align="center">
-  <b>Adding a Card</b><br>
+<details>
+  <summary>Adding a Card</summary>
   <img src="images/addingCard.png" alt="Adding a Card" width="600"/>
-</p>
+</details>
 
-<p align="center">
-  <b>Display/View All Cards</b><br>
+<details>
+  <summary>Display/View All Cards</summary>
   <img src="images/viewAll.png" alt="Display all Cards" width="600"/>
-</p>
+</details>
 
-<p align="center">
-  <b>MySQL Table</b><br>
+<details>
+  <summary>MySQL Table</summary>
   <img src="images/MySQL.png" alt="MySQL Table" width="600"/>
-</p>
+</details>
 
 ---
 
