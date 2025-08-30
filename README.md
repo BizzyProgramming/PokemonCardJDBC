@@ -1,4 +1,4 @@
-<h3>Author: Bruce Brown</h3>
+<h3>Author : Bruce Brown</h3>
 
 ---
 
