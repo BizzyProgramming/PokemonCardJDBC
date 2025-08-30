@@ -17,8 +17,7 @@ public class Start {
 		db = dataBase.getInstance();
 
 		login();
-	
-		
+
 	}
 
 	public static void login() throws Exception {
@@ -32,14 +31,12 @@ public class Start {
 		System.out.println("5) Search for card by Name");
 		System.out.println("Choose an option please...");
 		System.out.println("==============");
-		
-		
+
 		String name = sc.nextLine();
 		if (name.equals("1")) {
-			 db.viewAllCards();
-		//	db.orderByName();
-			
-			
+			db.viewAllCards();
+			// db.orderByName();
+
 		} else if (name.equals("2")) {
 			db.addCard();
 		} else if (name.equals("3")) {
@@ -55,6 +52,6 @@ public class Start {
 		} else {
 			login();
 		}
-		
+
 	}
 }

@@ -44,7 +44,9 @@ public class dataBase {
 
 		try {
 			
+			// Clear list to avoid duplication
 			card.clear();
+			
 			PreparedStatement ps = getConnection().prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
@@ -306,10 +308,5 @@ public class dataBase {
 			e.printStackTrace();
 		}
 
-	}
-	
-	// Call back method to get all the cards in the database.
-	public int getCardsCount() {
-		return card.size();
 	}
 }
