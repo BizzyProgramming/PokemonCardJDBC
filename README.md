@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  A simple <b>Pokemon Card Inventory System</b> built with Java, JDBC, and MySQL. Keep track of your Pokemon cards, their prices, and filter by details like, rarity, type, or element.
+  A simple UI <b>Pokemon Card Inventory System</b> built with Java, JDBC, and MySQL. I built it to keep track of my Pokemon cards, their prices, and filter by details like, rarity, type, or element. It is an extremely simple UI program that I may later build a front-end to it as another project.
 </p>
 
 ---
@@ -52,4 +52,30 @@
 
 ---
 
-<h3>Developed by</h3> <p>Bruce Brown</p>
+<h3>Author: </h3><p>Bruce Brown</p>
+
+---
+
+## Installation
+
+1. Clone the repository
+git clone https://github.com/BizzyProgramming/PokemonCardJDBC.git
+
+2. Open the project in your IDE
+
+3. Make sure you have MySQL installed and running. Create a database named pokemoncards.
+
+4. Update the dataBase class with your MySQL credentials if needed
+
+5. Built the project using Maven to resolve dependencies:
+
+gitbash
+mvn clean install
+
+---
+
+Usage
+
+- Run start class
+- Use the console menu to view, add, update, delete, or search cards.
+- The system tracks all the cards in the inventory and displays them automatically after viewing all cards.
