@@ -1,3 +1,8 @@
+<h3>Author: Bruce Brown</h3>
+
+---
+
+
 <h2 align="center">Pokemon Card Collection Inventory</h2>
 <p>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
@@ -49,10 +54,6 @@
   <summary>MySQL Table</summary>
   <img src="images/MySQL.png" alt="MySQL Table" width="600"/>
 </details>
-
----
-
-<h3>Author: Bruce Brown</h3>
 
 ---
 
