@@ -52,7 +52,7 @@
 
 ---
 
-<h3>Author: <p>Bruce Brown</p></h3>
+<h3>Author: Bruce Brown</h3>
 
 ---
 
